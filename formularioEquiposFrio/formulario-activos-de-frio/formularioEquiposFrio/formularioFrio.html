@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ingresar equipos</title>
+    <link rel="stylesheet" href="formularioFrio.css">
+</head>
+<body>
+    <section class="form-registrer">
+        <h1>Ingresar equipos:</h1>
+        <input class="controls" type="number" id="id" name="N°:id" placeholder="Id"> 
+        <input class="controls" type="text" name="dato" id="descripcion" placeholder="descripcion">
+       <h4>tipo de temp</h4>
+
+        <select class="controls" name="" id="tipoTemp">
+            <option value="BAJA">BAJA</option>
+            <option value="MEDIA">MEDIA</option>
+        </select>
+        
+        <select  id="rangoMin" class="controls" name="" >
+            <option  value="">rango-min</option>
+            <option value="-45">-45</option>
+            <option value="0">0</option>
+        </select>
+        
+        <select  id="rangoMax" class="controls" name="" >
+            <option  value="">rangoMax</option>
+            <option value="6">6</option>
+            <option value="-12">-12</option>
+        </select>
+        
+    
+       
+        <input class="controls" type="number" name="dato" id="local"placeholder="local" min="1">
+        <input class="controls" type="number" name="dato" id="seccion"placeholder="seccion" min="1">
+        <h4>estado</h4>
+        <input type="range" id="estado" name="points" min="0" max="1" step="1" value="0">
+
+        <select  id="tempVacio" class="controls" name="" >
+            <option  value="">tempVacio</option>
+            <option value="7">7</option>
+            <option value="-11">-11</option>
+        </select>
+        
+       
+        <input class="controls" type="text"  name="dato" id="etiqueta" placeholder="etiqueta">
+        <h4>impreso</h4>
+        <input type="range" id="impreso" name="points" min="0" max="1" step="1" value="0">
+        <h4>activo</h4>
+        <input type="range" id="activo" name="points" min="0" max="1" >
+        
+
+        <button class="boton cinco">
+            <div class="icono">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
+                    <polyline points="9 15 12 12 15 15" />
+                    <line x1="12" y1="12" x2="12" y2="21" />
+                  </svg>
+            </div>
+        <span>guardar</span>
+    </button>
+        <p><a href="#">ver tablas</a></p>
+    </section>
+
+
+    <script src="formularioFrio.js"></script>
+</body>
+</html>
